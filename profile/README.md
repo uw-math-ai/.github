@@ -4,7 +4,8 @@ The Math-AI lab provides a space for mathematicians at any level (faculty, postd
 
 We also have a research [seminar](https://math.washington.edu/events/series/math-ai-seminar).
 
-![photo](https://github.com/user-attachments/assets/95ec621d-7242-4e1d-a66c-b76fec8e934f)
+<img src="https://github.com/user-attachments/assets/171af19b-f9f7-4006-bc80-226edb2d6391" width="50%">
+
 
 ## Winter 2025
 
