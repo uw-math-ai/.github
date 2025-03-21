@@ -20,6 +20,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Mentors**: Vasily Ilin (lead)
 - **Students**: Siyuan Ge (jamesgsy@uw.edu)
 - **Description**: [Link](https://math.washington.edu/~jarod/xll.html)
+- **Code**: [Link](https://github.com/uw-math-ai/central_limit_theorem)
 
 #### Project 3: Examples and Counterexamples in Commutative Algebra
 - **Mentors**: Jarod Alper (lead)
@@ -28,6 +29,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 #### Project 4: Formalizing Polyhedral Geometry
 - **Mentors**: Caelan Ritter (lead)
 - **Description**: A polyhedron is a generalization of a polygon to n dimensions. We can define it either as an intersection of finitely many half-spaces (i.e., the closure of one "side" of a hyperplane) or, if it is bounded, as the "convex hull" of finitely many points. The goal of this project is to formalize enough of the basic definitions and results in polyhedral geometry so that we can write down the equivalence of the two definitions above. We will follow the proof outline in chapter 1 of Gaku Liu's notes.
+- **Code**: [Link](https://github.com/uw-math-ai/lean-polyhedral-geometry)
 
 #### Project 5: Metaprogramming and Writing New Tactics
 - **Mentors**: Dhruv Bhatia (lead)
@@ -41,14 +43,17 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Description**: We will attempt to use reinforced learning to solve a simplified version of proof generation. Our inspiration is the AlphaZero algorithm for two-players games, which we will adapt to a one-player game. The problem we will attack is to find efficient ways to compute a polynomial f(x_1, …, x_n) using an arithmetic circuit consisting of + and x gates together with scalar multiplication. Our strategy is to train a deep neural network consisting of an evaluation (indicating whether the model thinks the polynomial is efficiently computable) and a policy (a probability distribution over the next moves, with higher probability given to moves that simplify the expression). The computer is rewarded when it finds efficient arithmetic circuits.
 - **References**: 
   - Alphazero: "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm" by Silver, et al, [link](https://arxiv.org/abs/1712.01815)
+- **Code**: [Link](https://github.com/kyleAlexandad/RL-group-6Ver-new )
 
 #### Project 7: Auto-formalization with LLMs
 - **Mentors**: Vasily Ilin (lead), Zihong Lin(?)
 - **Description**: [Link](https://math.washington.edu/~jarod/xll.html)
+- **Code**: [Link](https://github.com/uw-math-ai/autoformalization-with-llms)
 
 #### Project 8: What Mathematical Functions Can Neural Networks Learn?
 - **Mentors**: Jarod Alper (lead), Michael Zeng (TA)
 - **Description**: We will investigate to what extent certain mathematical functions can be efficiently learned by multilayered neural networks. Can a neural network be trained to compute modular arithmetic? Modular arithmetic is important in cryptography, and some cryptosystems use the fact that linear regression (i.e., given an integer N and pairs (x_i,y_i), find m and b such that y = mx+b (mod N) closely approximates (x_i, y_i)). Can certain number theoretic functions be computed such as the Mobius function \mu(n)? Can transformers be trained to make linear algebra computations?
+- **Code**: [Link](https://github.com/hilalmufti/what-functions-can-nns-learn)
 
 ## Fall 2024
 
@@ -113,7 +118,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 - **Random Graphs**
   - Goal: Build a random graph G(n,p) with n = # of nodes with p = probability of an edge. Show that the expected number E(# edges in G(n,p)) of edges in a random graph G(n,p) is (n choose 2)p. Related goals: compute other expected numbers, e.g. number of triangles in a random graph.
-  - [GitHub code](https://github.com/Vilin97/random_graphs)
+  - [GitHub code](https://github.com/uw-math-ai/random_graphs)
   - Members: Zhongrui An, Hermann Chau, Vasily Ilin, George King, Benjamin Li, Yu He Zhang
 
 - **Formalizing Math 300**
@@ -127,7 +132,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Faculty mentor**: Jarod Alper
 - **Graduate student mentors**: Vasily Ilin, Leopold Mayer
 - **Student participants**: Dhruv Ashok, Gregory Baimetov, Zachary Banken, Dianna E., Luca Li, Lawrence Lin, Rico Qi, Timothy Tran, Alfie Xu, Edward Yu
-- **Github repository**: [vilin97](https://github.com/Vilin97/LLL)
+- **Github repository**: [vilin97](https://github.com/uw-math-ai/LLL)
 
 ### Projects:
 - **Lagrange's Theorem** (Dhruv Ashok)
@@ -166,7 +171,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Faculty mentor**: Jarod Alper
 - **Graduate student mentors**: Vasily Ilin, Leopold Mayer
 - **Student participants**: Gregory Baimetov, Zachary Banken, William Dudarov, Griffin Golias, Raymond Guo, Eva Hu, Luca Li, Lawrence Lin, Alex Sanchez
-- **Github repository**: [vilin97](https://github.com/Vilin97/LLL)
+- **Github repository**: [vilin97](https://github.com/uw-math-ai/LLL)
 
 ### Projects:
 - **Identities of the Fibonacci sequence Fn** (Lawrence Lin)
@@ -196,7 +201,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Faculty mentor**: Jarod Alper
 - **Graduate student mentors**: Vasily Ilin, Leopold Mayer
 - **Student participants**: Zachary Banken, Griffin Golias, Raymond Guo, Eva Hu, Hastin Kapoor, Luca Li, Lawrence Lin, Alex Sanchez
-- **Github repositories**: [raymondpg](https://github.com/raymondpg/XLL), [vilin97](https://github.com/Vilin97/LLL)
+- **Github repositories**: [raymondpg](https://github.com/raymondpg/XLL), [vilin97](https://github.com/uw-math-ai/LLL)
 
 **Project**: Formalizing solutions to exercises from undergraduate math textbooks such as Axler's book [Linear Algebra Done Right](https://linear.axler.net/), Mukres's book *Topology; a first course*, Silverman's book *A Friendly Introduction to Number Theory*, Silverman and Tate's book *Rational Points on Elliptic Curves*, Folland's book *Advanced Calculus*, Rudin's book *Principles of Mathematical Analysis*, and Hungerford's book *Abstract Algebra: An Introduction.*
 
