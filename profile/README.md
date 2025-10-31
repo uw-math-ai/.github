@@ -6,6 +6,76 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 <img src="https://github.com/user-attachments/assets/171af19b-f9f7-4006-bc80-226edb2d6391" width="50%">
 
+## Spring 2025 Math AI Lab Projects
+
+### Formalization Projects
+
+#### Project 1: Formalizing Polyhedral Geometry
+- **Mentors**: Caelan Ritter and Freda Zheng, Mathematics  
+- **Students**: Seven Lewis and George Peykanu  
+- **Description**: In this project, the goal is to formalize the basic results in polyhedral geometry, up to the equivalence of definitions of a polyhedron in terms of halfspaces and convex hulls. A polyhedron is a generalization of a polygon to n dimensions. We can define it either as an intersection of finitely many half-spaces (i.e., the closure of one “side” of a hyperplane) or, if it is bounded, as the “convex hull” of finitely many points. An explicit goal of this project is to formalize enough of the basic definitions and results in polyhedral geometry so that we can write down the equivalence of the two definitions above. We will follow the proof outline in chapter 1 of Gaku Liu's notes.  
+- **Code**: [Link](here)
+
+#### Project 2: Reinforcement Learning for Efficient Arithmetic Circuit Generation of Polynomials
+- **Mentors**: Prof. Jarod Alper, Mathematics  
+- **Students**: Alexandre Borentain, Hansel Lee, Claire Xu, and Weikun Zhang  
+- **Description**: We will attempt to use reinforcement learning to train computers to search for efficient arithmetic circuits computing specific polynomials. In some sense, this is a simplified version of proof generation, where computers are trained to search for proofs of theorems, except that in this case the search space is smaller. Our inspiration is the AlphaZero algorithm for two-players games, which we will adapt to a one-player game. The problem we will attack is to find efficient ways to compute a polynomial f(x₁, ..., xₙ) using an arithmetic circuit consisting of + and × gates together with scalar multiplication. Our strategy is to use Monte Carlo Tree Search to train a deep neural network to learn an effective evaluation function (giving a score of how close the current state is from computing the polynomial) and a policy (a probability distribution over the next moves, with higher probability given to moves that simplify the expression). The computer is rewarded when it finds efficient arithmetic circuits.  
+- **Code**: [Link](here)
+
+#### Project 3: Metaprogramming and Writing New Tactics
+- **Mentors**: Dhruv Bhatia, Mathematics  
+- **Students**: Dowland Aiello, Joseph Qian, Veer Shukla, Annis Wu  
+- **Description**: Teaching a person a proof is one thing, but explaining it to a computer is another beast. The computer demands explicit precision, down to the tiniest of details. Thus, any good theorem prover needs tools, or "tactics", that make theorem proving less tedious, and more akin to the way people reason. Lean comes with a built-in "metaprogramming" framework that allows users to build custom tools for automatic proof generation of specific goals. In this project, students learn about functional programming and monads before tackling the basics of metaprogramming. At the end, they write their own tactics. The current task at hand is to write a tactic that can, given a set of hypotheses of the form "a < b" where a and b come from a partially ordered type, automatically prove a goal of the same form by chaining together relevant hypotheses. We use the book *Metaprogramming in Lean 4* as a reference.  
+- **Code**: [Link](here)
+
+#### Project 4: Neural Theorem Proving
+- **Mentors**: Vasily Ilin, Mathematics  
+- **Students**: Henry Adams, Siyuan Ge, Attila Jamilov, Elizabeth Wang  
+- **Description**: Formalization is the process of translating human-written mathematical proofs into a form that can be verified by a computer. A popular tool for this is Lean, a proof assistant that represents proofs as code. However, the process of formalizing proofs in Lean can be slow and time-consuming. Our research explores neural theorem proving strategies, which aim to automate the generation of Lean proofs. We propose a tree-based search framework to formalize mathematical theorems in Lean using Language Models. This approach explores potential proof steps as branches in a tree, using AI models to suggest "tactics" at each node. This has the benefit of avoiding hallucinations by rigorously checking that AI suggestions represent valid Lean code. We employ both Large Language Models such as Claude Sonnet 3.5 and specialized fine-tuned Small Language Models such as Lean-Dojo. We use Pantograph to interact with Lean, leveraging its native support of Monte Carlo tree search. We assemble a small set of simple and medium-difficulty mathematical theorems to benchmark against, called **nanoF2F**. Additionally, we benchmark our system on the well-established **miniF2F** benchmark created by OpenAI.  
+- **Code**: [Link](here)
+
+#### Project 5: Matrix Manipulation and Linear Algebra in Lean
+- **Mentors**: Prof. Eric Klavins, Electrical and Computer Engineering, and Haoming Ning  
+- **Students**: David Bataresh and Hemkesh Bandi  
+- **Description**: Lean is a proof assistant that can be used to encode and check mathematical results in machine readable code and could one day be used to assist in the development of complex engineering systems. First, however, we need to teach it the foundations of engineering mathematics. In this project, students will contribute to a Lean library of basic results and tactics involving matrices and linear algebra. The overall goal is to support reasoning about a variety of engineering areas that depend on linear algebra, including control systems, quantum computing, and machine learning. Thus, sub-projects will begin with a result in one of these areas and work backwards to the basic results needed to support that result.  
+- **Code**: [Link](here)
+
+### Final Projects for Math 480: Introduction to Mathematical Formalization
+
+#### Project 6: Proving Strong Normalization of the Calculus of Constructions
+- **Mentors**: Jarod Alper and Vasily Ilin  
+- **Student**: Dowland Aiello  
+- **Description**: Proofs of strong normalization of the simply-typed lambda calculus have been exhaustively enumerated in the literature. A common strategy invented by W. W. Tait known as "Tait's method" (Robert Harper, 2022) interprets types as sets of "well-behaving" terms which are known to be strongly normalizing and composed of expressions in some such set. Strong normalization of the typed SK combinator calculus has been comparatively under-studied. Herein, I demonstrate that the typical proof of strong normalization using Tait's method holds for the typed SK combinator calculus. I also show that decomposition of the STLC into SK combinator expressions simplifies the typical proof of strong normalization.  
+- **Code**: [Link](here)  
+- **Book**: [Link](here)
+
+#### Project 7: Formalizing Vizing’s Theorem in Lean
+- **Mentors**: Jarod Alper and Vasily Ilin  
+- **Students**: Zayna Aarbi, Helinda He, and Manish Gatti  
+- **Description**: The goal is to formalize Vizing’s Theorem: every simple, undirected graph may be properly edge colored using a number of colors that is at most one larger than the maximum degree of the graph.  
+- **Code**: [Link](here)  
+- **Slides**: [Link](here)
+
+#### Project 8: The Six-Color Theorem
+- **Mentors**: Jarod Alper and Vasily Ilin  
+- **Students**: Sravani Panuganti, Jeb Song, and Taylor Woodward  
+- **Description**: Every simple planar graph can be properly colored with six colors. The motivation is that this is a stepping stone to the more general "five-color theorem", which in turn is a stepping stone to the "four-color theorem".  
+- **Code**: [Link](here)  
+- **Slides**: [Link](here)
+
+#### Project 9: Formalizing Using LLMs
+- **Mentors**: Jarod Alper and Vasily Ilin  
+- **Students**: Drew Bladek, Simon Chess, and Evan Wang  
+- **Description**: Large language models (LLMs) have demonstrated fairly impressive results in mathematical reasoning and proof generation. However, when applied to the Lean proof assistant, these models tend to generate code with subtle syntax errors, limiting their practical utility in auto-formalization without human intervention. In this work, we focus on improving the syntactic fluency of LLMs when generating Lean code, without targeting the correctness of mathematical content itself. We curate a small but diverse dataset of Lean code snippets and fine-tune an open-source LLM, and evaluate the syntactic validity of the model's outputs using automated Lean parsers.  
+- **Code**: [Link](here)
+
+### AG Group Formalization Project
+
+#### Project 10: Regular Local Rings
+- **Contributors**: Jarod Alper and Brian Nugent  
+- **Description**: We have formalized the definition and some of the first properties of regular local rings. Specifically, we have proved that regular local rings are domains and that one-dimensional regular local rings are PIDs. We hope to further formalize (1) relationships between regular local rings and regular sequences, (2) Koszul complex, (3) regular local rings are Cohen-Macaulay, (4) characterization of regularity in terms of projective dimension (Auslander–Buchsbaum–Serre), and (5) regular local rings are UFDs (Auslander–Buchsbaum).  
+- **Code**: [Link](here)
+
 
 ## Winter 2025
 
