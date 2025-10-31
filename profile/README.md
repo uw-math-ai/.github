@@ -6,6 +6,117 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 <img src="https://github.com/user-attachments/assets/171af19b-f9f7-4006-bc80-226edb2d6391" width="50%">
 
+## Fall 2025 Math AI Lab Projects
+
+We meet Mondays and Wednesdays from 4–5:30 pm in OUG 136.
+
+---
+
+### Project 1: AI for Quantum Code Compilation
+- **Lead Mentor**: Andres Paz  
+- **Students**: Eric Hur, Mayee Sun, Sylvie Lausier, Christian Tarta  
+- **Description**: Quantum error correction (QEC) codes are traditionally described using stabilizers, which define the subspace preserved by the code. However, implementing these codes requires translating stabilizers into fault-tolerant quantum circuits—an inherently nontrivial task that depends on the constraints and capabilities of the underlying hardware architecture.  
+  This project aims to develop an AI agent capable of synthesizing such circuits in a way that:  
+  1. In the ideal (noiseless) setting, the resulting circuits implement the intended stabilizer structure of the code on the target architecture.  
+  2. In the noisy setting, the agent searches over circuit variations to optimize fidelity, taking into account realistic noise models and architectural constraints.  
+  The outcome would be a toolchain bridging the gap between abstract QEC code design and concrete, high-performance circuit implementations, enabling better exploration of architecture-specific tradeoffs in fault-tolerant quantum computing.  
+- **Prerequisites**: Linear algebra (must have), ML experience (recommended)
+
+---
+
+### Project 2: Deep Learning of Number Theory
+- **Lead Mentors**: Jarod Alper and Junaid Hasan  
+- **Students**: Andrew Chen, Claire Xu, Ivonne Zhang, Akhil Srinivasan, Nina Tharamal, Hemkesh Bandi  
+- **Description**: The goal is to explore to what extent modern machine learning algorithms (e.g., feedforward neural networks, transformers, LLMs) can learn number-theoretic functions such as modular arithmetic, the Möbius function, or gcd. We can first attempt to replicate results from the literature ([arXiv:2502.10335](https://arxiv.org/pdf/2502.10335), [arXiv:2308.15594](https://arxiv.org/abs/2308.15594)) and then explore our own functions and algorithms. We aim to submit to one of the major ML conferences such as ICML or ICLR.  
+- **Prerequisites**: Python (must have), ML experience (desired)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/dl-nt)
+
+---
+
+### Project 3: Formalizing Geometric Measure Theory
+- **Lead Mentor**: Ignacio Tejeda  
+- **Students**: Annie Cao, Nathan Pao, Theodore Meek  
+- **Description**: The goal is to formalize the following theorem in geometric analysis: if \(E\) is a set of Hausdorff dimension \(0 < s < 1\), the density \(D^s(E,x)\) fails to exist at almost every point \(x \in E\). This is Theorem 4.2 in Falconer’s *Geometry of Fractal Sets*. To get exposure with Lean and specifically with analysis in Lean, this project will begin by following Terence Tao’s *Lean Companion to Analysis I*.  
+- **Prerequisites**: Lean (recommended), analysis (recommended)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/FormalizingGMT)
+
+---
+
+### Project 4: Formalizing Stacks
+- **Lead Mentors**: Eric Klavins and Max Lieblich  
+- **Additional Mentor**: Leopold Mayer  
+- **Students**: Dowland Aiello, James Martin  
+- **Description**: This project seeks to give formal definitions in Lean of the mathematical objects of sites, sheaves, and stacks. While these are sophisticated mathematical objects, their definitions are not hard to internalize axiomatically, assuming a basic understanding of category theory. Building off mathlib’s definition of a category, the first aim is to define a site following the Stacks Project Tag 00VG rather than using mathlib’s current definition. The focus here is on formalizing these key definitions, rather than building out a larger mathematical library with lemmas and theorems.  
+- **Prerequisites**: Lean (recommended), category theory (recommended)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/formalizing-stacks)
+
+---
+
+### Project 5: How Good Are Language Models at Lean?
+- **Lead Mentors**: Tyson Klingner and Patrick O’Melveny  
+- **Students**: Kaira Nair, Drew Bladek, Xinyue Fu, Bohao Chen  
+- **Description**: In an effort to understand the ability of frontier general-purpose large language models at generating Lean code, we will design an evaluation procedure for various Lean tasks such as next-step generation or entire proof generation. We will run our algorithms on existing frontier models to see which LLMs perform the best, providing valuable guidance to the Lean community on which models to use for certain use cases. The framework will be scalable so that the algorithms can be rerun when new model versions are released.  
+- **Prerequisites**: ML experience (must have), Lean (recommended)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/LLMsLean)
+
+---
+
+### Project 6: Lean Error Correction with Language Models
+- **Lead Mentor**: Vasily Ilin  
+- **Students**: Ajit Mallavarapu, Evan Wang, Simon Chess, Daniel Lee, Siyuan Ge  
+- **Description**: With the goal of making Lean easier to use and specifically making errors easier to debug, we will curate a Lean error dataset and train models to correct errors. There are currently large datasets of error-free code (e.g., mathlib and GitHub repositories), but no existing datasets of common human-made errors. This makes it hard to train LLMs to understand compiler feedback and fix the errors. We will assemble a dataset of erroneous proofs, compiler feedback, and error corrections, and fine-tune Qwen 4B on this dataset. We aim to submit to one of the major ML conferences such as ICML or ICLR.  
+- **Prerequisites**: Python (must have), Lean (must have), an ML course (useful)  
+- **Time Commitment**: At least 10 hours/week for a quarter  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/lean-error-correction)
+
+---
+
+### Project 7: Mathematician’s Copilot — Reliable Theorem Search
+- **Lead Mentors**: Vasily Ilin and Giovanni Inchiostro  
+- **Students**: Sophie Szeto, Eric Leonen, Ted Guan, Artemii Remizov  
+- **Description**: The broad vision is to apply modern machine learning techniques to facilitate mathematical research. As a first step, this project seeks to design search algorithms for locating theorem statements. Mathematics is unique in having precise, self-contained statements of knowledge, but no reliable tool yet exists to find them. Current frontier LLMs (e.g., ChatGPT) can approximate the right reference but often hallucinate the numbering. We will develop a search tool by scraping arXiv and other mathematical sources (e.g., the Stacks Project), extracting theorem statements, and computing embeddings of the text. At inference time, we will compare cosine similarities between user queries and stored theorems (similar to LeanSearch).  
+- **Prerequisites**: Python (must have), ML course (useful)  
+- **Time Commitment**: At least 5 hours/week for a quarter  
+
+---
+
+### Project 8: Monogenic Extensions of Regular Local Rings
+- **Meeting Time**: Tuesdays 8:30–10:30 am  
+- **Lead Mentors**: John Leo and Bianca Viray  
+- **Additional Mentor**: Bryan Boehnke  
+- **Students**: George Peykanu, Sathvik Kurapati, Tianshuo Wang, Xinyi Zhi  
+- **Description**: The goal is to add to Lean two lemmas from a recent paper ([arXiv:2503.07846](https://arxiv.org/abs/2503.07846)). The first lemma states that an étale extension of regular local rings is monogenic (i.e., generated by a single element). The second lemma states that an extension of regular local rings that fails to be étale at a unique codimension 1 point is also monogenic.  
+- **Prerequisites**: Lean (recommended), commutative algebra (recommended)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/monogenic-extensions)
+
+---
+
+### Project 9: Provable Computation in Lean
+- **Lead Mentor**: Dhruv Bhatia  
+- **Students**: Annis Wu, Ruslana Korolov, Zeyin Feng, Alan Chang  
+- **Description**: While Lean has seen extensive use as a theorem-proving assistant, its capabilities as a computational programming language have been underutilized. The goal of this project is to begin filling that gap. Along the way, we will learn the basics of functional programming, monads, and Lean’s metaprogramming framework to implement algorithms that can both be run efficiently and be reasoned about. Our main goal is to implement basic algorithms with applications to linear algebra while also proving (in Lean) correctness of said algorithms.  
+- **Prerequisites**: Lean (recommended), metaprogramming in Lean (recommended)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/provable_computation)
+
+---
+
+### Project 10: Reinforcement Learning for Polynomials
+- **Lead Mentors**: Jarod Alper and Michael Zeng  
+- **Students**: Bhaumik Mehta, Weikun (Kyle) Zhang, Rohan Pandey, Trey Adams, Naomi Morato, Evan Porter, Kaijie Jin  
+- **Description**: We will use reinforcement learning to train computers to search for efficient arithmetic circuits computing specific polynomials. This is in some sense a simplified version of proof generation, where computers are trained to search for proofs of theorems, except that in this case the search space is smaller. This project may also shed light on questions in algebraic complexity theory, specifically the algebraic analogue of P vs NP. Inspired by the AlphaZero algorithm for two-player games, we will adapt it to a single-player game. The goal is to find efficient ways to compute a polynomial \(f(x_1, \dots, x_n)\) using an arithmetic circuit consisting of + and × gates together with scalar multiplication. The computer is rewarded when it finds efficient arithmetic circuits. We aim to submit to a major ML conference such as ICML or ICLR.  
+- **Prerequisites**: Python (must have), ML experience (must have)  
+- **Code**: [GitHub repo](https://github.com/uw-math-ai/PolyArithmeticCircuitsRL)
+
+---
+
+### Project 11: Teaching a Computer to Knot
+- **Lead Mentors**: Allison Henrich (Seattle U) and Andrew Tawfeek  
+- **Students**: Sean Kawano, Abel Mesfin, Nicole Ham, Solden Stoll  
+- **Description**: Mosaic diagrams were developed in 2008 by Lomanoco and Kauffman to build quantum knot systems. Since then, their structure has been widely studied because of the convenient way they encode a knot in 3D space as a matrix. In 2014, Kuriya and Shehab showed that mosaics are a complete invariant for tame knots (i.e., real-world knots made from string).  
+  In this project, we will use this matrix encoding to build and train an AI model to recognize knots through their mosaic representation. Since knots are fundamentally topological objects with connectivity patterns, we will construct an appropriate graph neural network and train it, developing milestones to gauge progress (e.g., recognizing connectedness, then number of links, etc.).  
+- **Prerequisites**: Python experience (must have)
+
+
 ## Spring 2025 Math AI Lab Projects
 
 ### Formalization Projects
