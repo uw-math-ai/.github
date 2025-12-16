@@ -6,6 +6,117 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 <img width="50%" alt="math-ai-lab-group-photo" src="https://github.com/user-attachments/assets/bd3768e1-ef75-4da6-87ba-d311cb243baf" />
 
+## Winter 2026 Math AI Lab Projects
+
+Project teams meet Mondays and Wednesdays from 4–5:30 pm in Denny Hall 303.
+
+Lean Together meets Fridays 3:30–7 pm in CMU B-006.
+
+The goal of projects is a **publication** or a **significant open-source contribution**, e.g. to [mathlib4](https://github.com/leanprover-community/mathlib4). Students are expected to commit at least 5 hours per week to their project outside of meeting times.
+
+### Lean Projects
+
+The goal of autoformalization projects is to use Lean-specific AI assistants such as Harmonic's [Aristotle](https://aristotle.harmonic.fun/) to formalize large chunks of mathematics, and contibute to [mathlib4](https://github.com/leanprover-community/mathlib4).
+
+#### Geometric Measure Theory
+
+- Project Leader: Ignacio Tejeda
+- Formalization target: Theorem 4.2 in Falconer’s Geometry of Fractal Sets.
+- Code: [GitHub repo](https://github.com/uw-math-ai/FormalizingGMT)
+- Matlib PRs: [1](https://github.com/leanprover-community/mathlib4/pull/32824), [2](https://github.com/leanprover-community/mathlib4/pull/32851)
+- Prerequisites: Lean
+
+#### Commutative Algebra
+
+- Project Leaders: Haoming Ning and Leo Mayer
+- Formalization target: Artin—Rees lemma and Krull’s Intersection Theorem following the Stacks Project, tags [00IN](https://stacks.math.columbia.edu/tag/00IN) and [00IP](https://stacks.math.columbia.edu/tag/00IP).
+- Prerequisites: Lean
+
+#### Algebraic Geometry
+
+- Project Leaders: Bianca Viray and Bryan Boehnke
+- Formalization target: Monogenic extensions of regular local rings following [arXiv:2503.07846](https://arxiv.org/abs/2503.07846), lemmas 3.1 and 3.2.
+- Prerequisites: Lean
+
+#### Category Theory
+
+- Project Leader: Nelson Niu
+- Formalization target: Nelson's Polynomnial Functors textbook.
+- Prerequisites: Lean
+
+#### Formalization: zero-knowledge proofs
+
+- Project Leaders: Eric Klavins and Alexandra Aiello
+- Description: We would outline a framework for verifying mathematical theorems while keeping the respective proofs secret by leveraging dependent combinatory logic as a host language for Zero-Knowledge (ZK ) proof circuits. Specifically, we would interpret the axioms of the dependent SK combinator calculus as a universal ZK circuit capable of checking mathematical proofs encodeable in the calculus. We would target ZK-STARKs as our ideal ZK scheme, enabling quantum resistance of the proofs without trusted setup [Ben+18]. This would be a first-of-its kind result, with wide applications. Goal: publication
+- Prerequisites: Lean, type theory
+
+#### Provable Computation in Lean
+
+- Project Leader: Dhruv Bhatia
+- While Lean has seen extensive use as a theorem-proving assistant, its capabilities as a computational programming language have been underutilized. The goal of this project is to begin filling that gap. Along the way, we will learn the basics of functional programming, monads, and Lean’s metaprogramming framework to implement algorithms that can both be run efficiently and be reasoned about. Our main goal is to implement basic algorithms with applications to linear algebra while also proving (in Lean) correctness of said algorithms.  
+- Code: [GitHub repo](https://github.com/uw-math-ai/provable_computation)
+
+### AI Projects
+
+The goal of AI projects is to use AI and ML to advance mathematical research. For example, by helping mathematicians find relevant theorems, or by training models to learn mathematical functions or by creating math-specific datasets or models. AI projects are expected to result in a publication in a submission to a major ML conference such as ICML, ICLR, EMNLP or Neurips.
+
+#### Lean error correction with LLMs
+
+- Project Leader: Vasily Ilin
+- Description: fine-tune LLMs to correct Lean errors, using compiler feedback. Create a diverse dataset of errors and train on it. Submit to ICML 2026 in January.
+- Code: [GitHub repo](https://github.com/uw-math-ai/lean-error-correction)
+
+#### Mathematician's copilot: Semantic Theorem Search
+
+- Project Leaders: Giovanni Inchiostro and Vasily Ilin
+- Description: We help research mathematicians find relevant theorems quickly. We collected the dataset of all theorems on ArXiv, Stacks Project and other sources, and built vectorized search over it. Goal: submit to ICML 2026 in January.
+- Demo: [HF link](https://huggingface.co/spaces/uw-math-ai/theorem-search)
+- Code: [GitHub repo](https://github.com/uw-math-ai/TheoremSearch)
+
+#### Mathematician's copilot: Math2Vec
+
+- Project Leaders: Vasily Ilin and Giovanni Inchiostro
+- Description: Train a text embedder that understands math, latex and Lean. This will improve search over Lean, and natural language theorem search. It can be used for RAG as well. Use arxiv, mathoverflow, mathlib, Lean reservoir, and possibly other sources. Create an evaluation benchmark as well. Goal: submit to EMNLP 2026 in May.
+
+#### Mathematician's copilot: universal theorem graph
+
+- Project Leaders: Vasily Ilin and Giovanni Inchiostro
+- Description: Create the dependency graph of all theorems in arxiv, stacks project, and other open sources. Parse the `\ref` and `\cite` commands to build the graph. This will help with theorem search, and also with autoformalization. Goal: submit to Neurips 2026 datasets & benchmarks in May.
+- Prerequisites: Python, LaTeX experience.
+
+#### CayleyPy: search on massive combinatorial graphs
+
+- Project Leaders: TBD
+- Description: Optimize [CayleyPy](https://github.com/cayleypy/cayleypy), make a CLI, and use it on various combinatorial problems, such as estimating diameters of symmetric groups. Goal: submission to ICLR 2027 in September.
+- Prerequisites: solid Python, some group theory or combinatorics.
+
+#### Reinforcement Learning for Polynomials
+
+- Project Leader: Michael Zeng
+- Description: Use RL to find efficient arithmetic circuits for polynomials.
+- Code: [GitHub repo](https://github.com/uw-math-ai/PolyArithmeticCircuitsRL)
+
+#### LLM Randomness: un-collapse an LLM
+
+- Project Leader: TBD
+- LLMs are very bad at generating true randomness. For example, they almost always tell the same joke, generate the same random number from 1 to 100, etc. Can this be fixed by careful prompting or by fine-tuning? Does fine-tuning to produce truly random numbers from 1 to 100 transfer to telling more diverse jokes? Does it also transfer to more diverse proof strategies in Lean, thus boosting the proof rate? Goal: math-ai workshop at ICLR or ICML 2026.
+- Prerequisites: LLM fine-tuning experience, basic probability.
+
+#### AI for Quantum Code Compilation
+
+- Project Leader: Andres Paz  
+- Description: Quantum error correction (QEC) codes are traditionally described using stabilizers, which define the subspace preserved by the code. However, implementing these codes requires translating stabilizers into fault-tolerant quantum circuits—an inherently nontrivial task that depends on the constraints and capabilities of the underlying hardware architecture.  
+  This project aims to develop an AI agent capable of synthesizing such circuits in a way that:  
+  1. In the ideal (noiseless) setting, the resulting circuits implement the intended stabilizer structure of the code on the target architecture.  
+  2. In the noisy setting, the agent searches over circuit variations to optimize fidelity, taking into account realistic noise models and architectural constraints.  
+  The outcome would be a toolchain bridging the gap between abstract QEC code design and concrete, high-performance circuit implementations, enabling better exploration of architecture-specific tradeoffs in fault-tolerant quantum computing.
+
+#### Deep learning for number theory
+
+- Project Leader: Junaid Hasan  
+- Description: The goal is to explore to what extent modern machine learning algorithms (e.g., feedforward neural networks, transformers, LLMs) can learn number-theoretic functions such as modular arithmetic, the Möbius function, or gcd. We can first attempt to replicate results from the literature ([arXiv:2502.10335](https://arxiv.org/pdf/2502.10335), [arXiv:2308.15594](https://arxiv.org/abs/2308.15594)) and then explore our own functions and algorithms. We aim to submit to one of the major ML conferences such as ICML or ICLR.  
+- Prerequisites: Python (must have), ML experience (desired)
+- Code: [GitHub repo](https://github.com/uw-math-ai/dl-nt)
 
 ## Fall 2025 Math AI Lab Projects
 
