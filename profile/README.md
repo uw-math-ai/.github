@@ -89,6 +89,7 @@ The goal of AI projects is to use AI and ML to advance mathematical research. Fo
 - Project Leaders: TBD
 - Description: Optimize [CayleyPy](https://github.com/cayleypy/cayleypy), make a CLI, and use it on various combinatorial problems, such as estimating diameters of symmetric groups. Goal: submission to ICLR 2027 in September.
 - Prerequisites: solid Python, some group theory or combinatorics.
+- Project proposal: [doc](https://docs.google.com/document/d/1CkM2QaZUbJAflKCdj3qvHQaeTi0mSsUuhzZNSp17k08/edit?usp=sharing)
 
 #### Reinforcement Learning for Polynomials
 
