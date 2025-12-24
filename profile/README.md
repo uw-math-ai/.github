@@ -5,7 +5,7 @@ We have formalized regular local rings ([link](https://github.com/leanprover-com
 
 We also have a research [seminar](https://math.washington.edu/events/series/math-ai-seminar).
 
-<img width="50%" alt="math-ai-lab-group-photo" src="https://github.com/user-attachments/assets/bd3768e1-ef75-4da6-87ba-d311cb243baf" />
+<img width="70%" alt="math-ai-lab-group-photo" src="https://github.com/user-attachments/assets/bd3768e1-ef75-4da6-87ba-d311cb243baf" />
 
 ## Winter 2026 Math AI Lab Projects
 
