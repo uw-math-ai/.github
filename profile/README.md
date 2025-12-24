@@ -30,7 +30,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 #### Commutative Algebra
 
 - Project Leaders: Haoming Ning and Leo Mayer
-- Formalization target: Artin—Rees lemma and Krull’s Intersection Theorem following the Stacks Project, tags [00IN](https://stacks.math.columbia.edu/tag/00IN) and [00IP](https://stacks.math.columbia.edu/tag/00IP).
+- Formalization target: Artin-Rees lemma and Krull’s Intersection Theorem following the Stacks Project, tags [00IN](https://stacks.math.columbia.edu/tag/00IN) and [00IP](https://stacks.math.columbia.edu/tag/00IP).
 - Prerequisites: Lean
 
 #### Algebraic Geometry
@@ -42,7 +42,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 #### Category Theory
 
 - Project Leader: Nelson Niu
-- Formalization target: Nelson's Polynomnial Functors textbook.
+- Formalization target: Nelson Niu & David Spivak’s Polynomial Functors [textbook](https://toposinstitute.github.io/poly/poly-book.pdf)
 - Prerequisites: Lean
 
 #### Formalization: zero-knowledge proofs
