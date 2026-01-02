@@ -13,6 +13,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 - **Winter 2026 application [form](https://forms.gle/jYeWCpniZ36ae5ee8)**
 - [seminar](https://math.washington.edu/events/series/math-ai-seminar)
 - Main website: [ai.math.uw.edu](http://ai.math.uw.edu)
+- Lab docs: [project management](https://github.com/uw-math-ai/math-ai-docs#project-management), recommended [tools](https://github.com/uw-math-ai/math-ai-docs#tools), contribution to [Mathlib](https://github.com/uw-math-ai/math-ai-docs#contribute-to-mathlib) and [publishing](https://github.com/uw-math-ai/math-ai-docs#publish).
 
 ## Winter 2026 Math AI Lab Projects
 
