@@ -38,7 +38,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 #### Commutative Algebra
 
 - Project Leaders: Haoming Ning and Leo Mayer
-- Formalization target: Artin-Rees lemma and Krull’s Intersection Theorem following the Stacks Project, tags [00IN](https://stacks.math.columbia.edu/tag/00IN) and [00IP](https://stacks.math.columbia.edu/tag/00IP).
+- Formalization target: The theorem that a regular local ring is a UFD, referred by some as the Auslander-Buchsbaum theorem. See Stacks Project 0AG0: https://stacks.math.columbia.edu/tag/0AG0.
 - Prerequisites: Lean
 
 #### Algebraic Geometry
