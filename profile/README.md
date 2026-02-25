@@ -11,10 +11,11 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 ## Links
 
 - **Spring 2026 Project Leader [form](https://forms.gle/RktTfsD92Uf2VYgUA)**
-- [seminar](https://math.washington.edu/events/series/math-ai-seminar)
-- Main website: [ai.math.uw.edu](http://ai.math.uw.edu)
+- Math AI [Seminar](https://math.washington.edu/events/series/math-ai-seminar)
+- UW website: [ai.math.uw.edu](http://ai.math.uw.edu)
 - LinkedIn: [uw-math-ai-lab](https://www.linkedin.com/company/uw-math-ai-lab)
-- Lab docs: [project management](https://github.com/uw-math-ai/math-ai-docs#project-management), recommended [tools](https://github.com/uw-math-ai/math-ai-docs#tools), contribution to [Mathlib](https://github.com/uw-math-ai/math-ai-docs#contribute-to-mathlib) and [publishing](https://github.com/uw-math-ai/math-ai-docs#publish).
+- HuggingFace: [uw-math-ai](https://huggingface.co/uw-math-ai)
+- Lab docs: [math-ai-docs](https://github.com/uw-math-ai/math-ai-docs)
 
 ## Preprints
 
@@ -25,7 +26,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 Project teams meet Mondays and Wednesdays from 4–5:30 pm in Denny Hall 303.
 
-Lean Together meets Fridays 3:30–7 pm in CMU B-006.
+Lean Together meets Fridays 3:30–6 pm in CMU B-006.
 
 The goal of projects is a **publication** or a **significant open-source contribution**, e.g. to [mathlib4](https://github.com/leanprover-community/mathlib4). Students are expected to commit at least 5 hours per week to their project outside of meeting times.
 
