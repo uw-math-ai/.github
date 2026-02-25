@@ -10,7 +10,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 ## Links
 
-- **Winter 2026 application [form](https://forms.gle/jYeWCpniZ36ae5ee8)**
+- **Spring 2026 Project Leader [form](https://forms.gle/RktTfsD92Uf2VYgUA)**
 - [seminar](https://math.washington.edu/events/series/math-ai-seminar)
 - Main website: [ai.math.uw.edu](http://ai.math.uw.edu)
 - LinkedIn: [uw-math-ai-lab](https://www.linkedin.com/company/uw-math-ai-lab)
