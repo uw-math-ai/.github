@@ -21,6 +21,7 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 - [arXiv:2602.05216](https://huggingface.co/papers/2602.05216)
 - [arXiv:2602.02990](https://huggingface.co/papers/2602.02990)
+- [arXiv:2603.17075](https://arxiv.org/abs/2603.17075)
 
 ## Spring 2026 Math AI Lab Projects
 
