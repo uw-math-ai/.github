@@ -26,8 +26,6 @@ We also have a research [seminar](https://math.washington.edu/events/series/math
 
 Project teams meet Mondays and Wednesdays from 4–5:30 pm in Odegaard 136.
 
-Lean Together meets Fridays 3:30–6 pm in CMU B-006.
-
 The goal of projects is a **publication** or a **significant open-source contribution**, e.g. to [mathlib4](https://github.com/leanprover-community/mathlib4). Students are expected to commit at least 5 hours per week to their project outside of meeting times.
 
 ### Lean Projects
@@ -75,12 +73,6 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 
 - Project Leaders: Bianca Viray and Bryan Boehnke
 - Formalization target: Monogenic extensions of regular local rings following [arXiv:2503.07846](https://arxiv.org/abs/2503.07846), lemmas 3.1 and 3.2.
-- Prerequisites: Lean
-
-#### Category Theory
-
-- Project Leader: Nelson Niu
-- Formalization target: Nelson Niu & David Spivak's Polynomial Functors [textbook](https://toposinstitute.github.io/poly/poly-book.pdf).
 - Prerequisites: Lean
 
 #### Formalization: zero-knowledge proofs
