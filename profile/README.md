@@ -37,6 +37,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 - Project Leader: Vasily Ilin
 - Description: Most undergraduate mathematics is present in [mathlib](https://leanprover-community.github.io/mathlib4_docs/), but several big gaps remain: differential geometry, partial differential equations, numerical analysis. We will autoformalize undergraduate textbooks on numerical analysis of differential equations, starting with Iserles's *A First Course in the Numerical Analysis of Differential Equations* and Butcher's *Numerical Methods for Ordinary Differential Equations*. Since manual formalization is time-consuming, we will build a semi-autonomous AI agent along the way, automating more of the process as the project progresses. Goal: workshop paper at the [AI for Math workshop](https://ai4math2026.github.io/) at ICML 2026 (deadline May 25).
 - Code: [GitHub repo](https://github.com/uw-math-ai/OpenMath)
+- Members: Vasily Ilin, Theo Meek, Siyuan Ge, Saumi Joshi, Di Qiu Xiang
 - Prerequisites: Lean, undergraduate analysis
 
 #### Geometric Invariant Theory (GIT)
@@ -44,6 +45,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 - Project Leaders: Arkamouli Debnath, Giovanni Inchiostro, Leo Mayer
 - Description: Geometric invariant theory studies quotients of group actions in algebraic geometry. There is at present almost no GIT in mathlib, presenting a unique opportunity to contribute. We will (1) formalize that for a finite group *G* acting on a polynomial ring *k[x₁,…,xₙ]*, the invariant ring *k[x₁,…,xₙ]^G* is finitely generated, building toward the linearly-reductive-group version; and (2) formalize the definition of a "good quotient" and prove theorems for simple examples of finite groups acting on polynomial rings.
 - Code: [GitHub repo](https://github.com/uw-math-ai/Formalizing-geometric-invariant-theory-GIT-)
+- Members: Xuanyu Yang, Emily Meng, Bohan Zhao, Jacob Boyce
 - Prerequisites: Lean, commutative algebra or algebraic geometry
 
 #### JAX in Lean
@@ -60,6 +62,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 - Formalization target: Theorem 4.2 in Falconer's Geometry of Fractal Sets.
 - Code: [GitHub repo](https://github.com/uw-math-ai/FormalizingGMT)
 - Mathlib PRs: [1](https://github.com/leanprover-community/mathlib4/pull/32824), [2](https://github.com/leanprover-community/mathlib4/pull/32851)
+- Members: Theo Meek, Nathan Pao, Annie Cao, Josh
 - Prerequisites: Lean
 
 #### Commutative Algebra: Auslander–Buchsbaum
@@ -67,12 +70,14 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 - Project Leaders: Haoming Ning and Leo Mayer
 - Formalization target: The theorem that a regular local ring is a UFD, referred by some as the Auslander–Buchsbaum theorem. See Stacks Project [0AG0](https://stacks.math.columbia.edu/tag/0AG0).
 - Code: [GitHub repo](https://github.com/uw-math-ai/auslander-buchsbaum)
+- Members: Nailin Guan, Dora Kassabova
 - Prerequisites: Lean
 
 #### Algebraic Geometry
 
 - Project Leaders: Bianca Viray and Bryan Boehnke
 - Formalization target: Monogenic extensions of regular local rings following [arXiv:2503.07846](https://arxiv.org/abs/2503.07846), lemmas 3.1 and 3.2.
+- Members: George Peykanu, Grant Yang
 - Prerequisites: Lean
 
 #### Formalization: zero-knowledge proofs
@@ -86,6 +91,7 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 - Project Leader: Dhruv Bhatia
 - While Lean has seen extensive use as a theorem-proving assistant, its capabilities as a computational programming language have been underutilized. The goal of this project is to begin filling that gap. Along the way, we will learn the basics of functional programming, monads, and Lean's metaprogramming framework to implement algorithms that can both be run efficiently and be reasoned about. Our main goal is to implement basic algorithms with applications to linear algebra while also proving (in Lean) correctness of said algorithms.
 - Code: [GitHub repo](https://github.com/uw-math-ai/provable_computation)
+- Members: Joseph Qian, Junye Ji, Veer Shukla, Alan Chang
 
 ### AI Projects
 
@@ -96,6 +102,7 @@ The goal of AI projects is to use AI and ML to advance mathematical research. Fo
 - Project Leaders: Dean Light and Michael Theologitis
 - Description: LeanGCD aims to improve Lean proof generation by frontier large language models using inference-time stabilization methods rather than retraining. The project adapts [grammar-constrained decoding techniques](https://arxiv.org/abs/2305.13971) with Lean's [syntax extensions](https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Defining-New-Syntax/). Planned contributions: a Lean-specific GCD implementation that plugs into HuggingFace/vLLM inference pipelines, and empirical evaluation on MiniF2F, ProverBench, and PutnamBench. Goal: ICML 2026 (October) or 2027 (January).
 - Code: [GitHub repo](https://github.com/DeanLight/LeanGCD)
+- Members: Evan Wang, Ben Bioren, Naren Prabhu, Nhan Pham
 - Prerequisites: Python, ML / LLM inference experience
 
 #### Mathematician's copilot: Semantic Theorem Search
@@ -104,11 +111,13 @@ The goal of AI projects is to use AI and ML to advance mathematical research. Fo
 - Description: We help research mathematicians find relevant theorems quickly. We collected the dataset of all theorems on ArXiv, Stacks Project and other sources, and built vectorized search over it. Goal: submit to ICML 2026 in January.
 - Demo: [HF link](https://huggingface.co/spaces/uw-math-ai/theorem-search)
 - Code: [GitHub repo](https://github.com/uw-math-ai/TheoremSearch)
+- Members: Eric Leonen, Sophie Szeto, Artemii Remizov, Luke Alexander
 
 #### Mathematician's copilot: Math2Vec
 
 - Project Leader: Henry Kvinge (PNNL)
 - Description: Train a text embedder that understands math, latex and Lean. This will improve search over Lean, and natural language theorem search. It can be used for RAG as well. Use arxiv, mathoverflow, mathlib, Lean reservoir, and possibly other sources. Create an evaluation benchmark as well. Goal: submit to EMNLP 2026 in May.
+- Members: Saharsh Bhargava, Cecilia, Jiahe Lu, Michael, Kedar Chintalapati, Rachit Jaiswal, Samarth Rao, Jared Darlington, Leo Carlin
 
 #### CayleyPy: search on massive combinatorial graphs
 
@@ -116,12 +125,14 @@ The goal of AI projects is to use AI and ML to advance mathematical research. Fo
 - Description: Optimize [CayleyPy](https://github.com/cayleypy/cayleypy), make a CLI, and use it on various combinatorial problems, such as estimating diameters of symmetric groups. Goal: submission to ICLR 2027 in September.
 - Prerequisites: solid Python, some group theory or combinatorics.
 - Project proposal: [doc](https://docs.google.com/document/d/1CkM2QaZUbJAflKCdj3qvHQaeTi0mSsUuhzZNSp17k08/edit?usp=sharing)
+- Members: Danny Zhang, Gaurang Pendharkar, Merav Frank, Sambhu Ganesan, Xiaoxing Zhang
 
 #### Reinforcement Learning for Polynomials
 
 - Project Leader: Michael Zeng
 - Description: Use RL to find efficient arithmetic circuits for polynomials.
 - Code: [GitHub repo](https://github.com/uw-math-ai/PolyArithmeticCircuitsRL)
+- Members: Kyle Zhang, Rohan Pandey, Naomi Morato
 
 #### AI for Quantum Code Compilation
 
@@ -131,12 +142,14 @@ The goal of AI projects is to use AI and ML to advance mathematical research. Fo
   1. In the ideal (noiseless) setting, the resulting circuits implement the intended stabilizer structure of the code on the target architecture.
   2. In the noisy setting, the agent searches over circuit variations to optimize fidelity, taking into account realistic noise models and architectural constraints.
   The outcome would be a toolchain bridging the gap between abstract QEC code design and concrete, high-performance circuit implementations, enabling better exploration of architecture-specific tradeoffs in fault-tolerant quantum computing.
+- Members: Christian Tarta, Sylvie Lausier, Mayee Sun, Sarju Patel
 
 #### How good are LLMs at Lean?
 
 - Project Leader: Tyson Klingner
 - Description: Design an evaluation procedure for various Lean tasks such as next step generation or entire proof generation. Run our algorithms on frontier models to see which LLMs perform the best, providing guidance to the Lean community on which LLMs to use. Use a scalable architecture so that our algorithms can be rerun when new models are released.
 - Code: [GitHub repo](https://github.com/uw-math-ai/LLMsLean)
+- Members: Escher Crawford, Drew Bladek
 
 ## Winter 2026 Math AI Lab Projects
 
