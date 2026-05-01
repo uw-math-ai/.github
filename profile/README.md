@@ -44,7 +44,9 @@ The goal of autoformalization projects is to use Lean-specific AI assistants suc
 #### Geometric Invariant Theory (GIT)
 
 - Project Leaders: Arkamouli Debnath, Giovanni Inchiostro, Leo Mayer
-- Description: Geometric invariant theory studies quotients of group actions in algebraic geometry. There is at present almost no GIT in mathlib, presenting a unique opportunity to contribute. We will (1) formalize that for a finite group *G* acting on a polynomial ring *k[x₁,…,xₙ]*, the invariant ring *k[x₁,…,xₙ]^G* is finitely generated, building toward the linearly-reductive-group version; and (2) formalize the definition of a "good quotient" and prove theorems for simple examples of finite groups acting on polynomial rings.
+- Description: Geometric Invariant Theory (GIT) is the theory of taking quotients in algebraic geometry. At present, there is almost no formalization of GIT in Lean on mathlib, and this presents the unique opportunity to contribute in two different directions as follows:
+    - **Commutative algebra:** Our main goal is to formalize the definition of a linearly reductive group and prove the theorem: "If a linearly reductive group $G$ acts locally finitely on a finitely generated $k$-algebra $R$, then the invariant ring $R^G$ is a finitely generated $k$-algebra." The fact that a finite group is linearly reductive (Maschke's theorem) is already in mathlib, and that proof uses the existence of a "Reynolds operator". As part of this formalization project, we define a Reynolds operator and prove its existence (in Lean) for any linearly reductive group.
+    - **Geometry:** The main content of GIT is to define a "good quotient". We aim to formalize the definition.
 - Code: [GitHub repo](https://github.com/uw-math-ai/Formalizing-geometric-invariant-theory-GIT-)
 - Members: Xuanyu Yang, Emily Meng, Bohan Zhao, Jacob Boyce
 - Prerequisites: Lean, commutative algebra or algebraic geometry
